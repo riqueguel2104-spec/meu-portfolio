@@ -170,7 +170,7 @@ switch (randomMusic) {
     const counterKey = "narz9_portfolio_visits";
 
     // Atualiza o contador sempre que alguém entrar
-    fetch(`https://api.countapi.xyz/hit/${counterKey}/visits`)
+    fetch(`https://api.countapi.dev/hit/${counterKey}`)
         .then(res => res.json())
         .then(data => {
             document.getElementById("visit-counter").textContent =
